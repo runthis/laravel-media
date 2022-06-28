@@ -1,0 +1,50 @@
+{
+    "name": "runthis/laravel-media",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Handle media in laravel packages",
+    "keywords": [
+        "laravel",
+        "media"
+    ],
+    "homepage": "https://github.com/runthis/laravel-media",
+    "authors": [
+        {
+            "name": "runthis"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/contracts": "^9.0",
+        "illuminate/http": "^9.9",
+        "illuminate/support": "^9.9",
+        "spatie/laravel-package-tools": "^1.9.2"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "spatie/laravel-ray": "^1.26",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Runthis\\Media\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Runthis\\Media\\MediaServiceProvider"
+            ],
+            "aliases": {
+                "Media": "Runthis\\Media\\Facades\\Media"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
